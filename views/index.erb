@@ -1,0 +1,9 @@
+<h2>The time is <%= Time.new %> </h2>
+
+<% @restaurants.each do |restaurant| %>
+    <p><%= restaurant.title %></p>
+    <p><%= restaurant.city %></p>
+
+    <a href="/restaurants/<%= restaurant.id %>">See Restaurant</a>
+    <p>==================================</p>
+<% end %>
